@@ -317,13 +317,13 @@ def level2():
             if event.key==pygame.K_w or event.key==pygame.K_UP: 
                     ballyspeed-=1 #Makes the ball go more upwards than before.
                     ballyspeed=max(ballyspeed,-20) #Ensures the ball doesn't go past a certain speed.
-                if event.key==pygame.K_s or event.key==pygame.K_DOWN:
+            if event.key==pygame.K_s or event.key==pygame.K_DOWN:
                     ballyspeed+=1 #Makes the ball go more downwards than before.
                     ballyspeed=min(ballyspeed,20) #Ensures the ball doesn't go past a certain speed.
-                if event.key==pygame.K_d or event.key==pygame.K_RIGHT:
+            if event.key==pygame.K_d or event.key==pygame.K_RIGHT:
                     ballxspeed+=1 #Makes the ball go more rightwards than before.
                     ballxspeed=min(ballxspeed,20) #Ensures the ball doesn't go past a certain speed.
-                if event.key==pygame.K_a or event.key==pygame.K_LEFT:
+            if event.key==pygame.K_a or event.key==pygame.K_LEFT:
                     ballxspeed-=1 #Makes the ball go mroe leftwards than before.
                     ballxspeed=max(ballxspeed,-20) #Ensures the ball doesn't go past a certain speed.
         #game logic
